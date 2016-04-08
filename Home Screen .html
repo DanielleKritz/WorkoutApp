@@ -1,25 +1,3 @@
-Home Screen.html
-Details
-Activity
-YESTERDAY
-
-Alexa LaMontagnecreated and shared an item in
-Thu 11:22 PM
-Google Drive Folder
-Power Group (HCI)
-HTML
-Home Screen.html
-m
-Can edit
-mrkilbaha95
-D
-Can edit
-Danielle Kritz
-
-Can edit
-You
-No recorded activity before April 7, 2016
-
 <html>
 <head>
 <style>
@@ -29,7 +7,7 @@ No recorded activity before April 7, 2016
 		padding: 0;
 		overflow: hidden;
 		background-color:#3B8183;
-		font-size: 23px;
+		font-size: 21px;
 	}
 
 	li {
@@ -38,11 +16,33 @@ No recorded activity before April 7, 2016
 		margin-left: 150px;
 		margin-right: 100px;
 	}
-
 	.pageTitle{
 		font-size:40px;
 		font-weight: bold;
 		color: #ED303C;
+	}
+
+/* Today's Workout */
+	tr {
+	width: 55%;
+	display: inline-table;
+	table-layout: fixed;
+	}
+
+	.tableTitle{
+	  background-color:#3B8183;
+	  font-size: 25px;
+	}
+
+	table{
+	 height:300px;              // <-- Select the height of the table
+	 display: -moz-groupbox;    // Firefox Bad Effect
+	}
+	tbody{
+	  overflow-y: scroll;
+	  height: 300px;            //  <-- Select the height of the body
+	  width: 45%;
+	  position: absolute;
 	}
 
 
@@ -59,8 +59,33 @@ No recorded activity before April 7, 2016
 </body>
 
 <h1>
-	<p class = "pageTitle", align="center">My Workout</p>
+	<p class = "pageTitle", align="center">Today's Workout</p>
 </h1>
+<br><br>
+
+<table class="table table-striped">
+    <thead>
+    <tr class="tableTitle">
+        <th>Today's Workout</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="filterable-cell">10 minutes - Jumping Jacks</td>
+
+    </tr>
+    <tr>
+        <td class="filterable-cell", align = "center">Ford</td>
+    </tr>
+            <tr>
+        <td class="filterable-cell">Ford</td>
+        <td class="filterable-cell">Escort</td>
+
+    </tr>
+
+    </tbody>
+
+<br> <br>
 
 <body>
 	<div style="text-align:center">
