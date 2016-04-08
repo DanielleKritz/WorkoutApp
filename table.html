@@ -1,0 +1,57 @@
+<html>
+
+<style>
+tr {
+width: 50%;
+display: inline-table;
+table-layout:fixed;
+}
+
+.tableTitle{
+  background-color:#ED303C;
+  font-size: 25px;
+}
+
+table{
+ height:300px;              // <-- Select the height of the table
+ display: -moz-groupbox;    // Firefox Bad Effect
+}
+tbody{
+  overflow-y: scroll;
+  height: 150px;            //  <-- Select the height of the body
+  width: 100%;
+  position: fixed;
+
+}
+
+td{
+  height: 50px;
+
+}
+</style>
+
+
+<table class="table table-striped">
+    <thead>
+    <tr class="tableTitle">
+        <th>Today's Workout</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="filterable-cell", align="center">10 minutes</td>
+        <td class="filterable cell", align="center">Jumping Jacks</td>
+
+    </tr>
+    <tr>
+        <td class="filterable-cell", align = "center">12 minutes</td>
+        <td class="filterable-cell", align="center">Pushups</td>
+    </tr>
+    <tr>
+        <td class="filterable-cell", align="center">X</td>
+        <td class="filterable-cell", align="center">Y</td>
+    </tr>
+
+    </tbody>
+
+</html>
